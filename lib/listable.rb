@@ -24,9 +24,9 @@ def format_date(date1, date2 = nil)
 
 def format_priority(priority)
     case priority
-    when 'high' then ' ⇧'.colorize(:red)
-    when 'medium' then ' ⇨'.colorize(:orange)
-    when 'low' then ' ⇩'.colorize(:green)
+    when 'high' then '***'.colorize(:red)
+    when 'medium' then ' **'.colorize(:orange)
+    when 'low' then ' *'.colorize(:green)
     else ''
     end
   end

@@ -21,7 +21,8 @@ list.add("link", "https://github.com", site_name: "GitHub Homepage")
 list.all
 list.delete(3)
 list.all
-list.export_file
+#list.export_file
+
 # SHOULD CREATE AN UNTITLED LIST AND ADD ITEMS TO IT
 # --------------------------------------------------
  new_list = UdaciList.new # Should create a list called "Untitled List"
@@ -46,4 +47,7 @@ list.export_file
 
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
- new_list.filter("event")
+# new_list.filter("event")
+
+list.delete_all
+list.all

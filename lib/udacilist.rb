@@ -2,6 +2,9 @@ class UdaciList
   
   attr_reader :title, :items
 
+ 
+
+
   def initialize(options = {})
     @title = options[:title] ? options[:title] : 'Untitled List'
     @items = []
@@ -75,6 +78,13 @@ def export_file
     end
   end
 
+ 
 
-end
+  
+  def delete_all
+    @items.clear
+  end
+    
+  end
+
 

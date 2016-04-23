@@ -47,7 +47,13 @@ list.all
 
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
-# new_list.filter("event")
+ new_list.filter("event")
+
+
+
+# Extra Features
+# -------------------------
 
 list.delete_all
 list.all
+new_list.export_file

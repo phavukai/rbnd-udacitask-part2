@@ -7,8 +7,7 @@ class EventItem
     @start_date = Chronic.parse(options[:start_date]) if options[:start_date]
     @end_date = Chronic.parse(options[:end_date]) if options[:end_date]
   end
-  
-  
+    
   def details
       format_indent(type: 'Event:') +
       format_indent(description: @description) +

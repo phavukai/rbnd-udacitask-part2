@@ -7,9 +7,7 @@ class TodoItem
     @due = options[:due] ? Chronic.parse(options[:due]) : options[:due]
     @priority = validated_priority(options[:priority])
   end
-  
-  
- 
+   
   def details
       format_indent(type: 'Todo:') +
       format_indent(description: @description) +
@@ -18,8 +16,7 @@ class TodoItem
       format_priority(@priority)
   end
 
-
-def validated_priority(priority)
+  def validated_priority(priority)
     if ['high', 'medium', 'low', nil].include?(priority)
       priority
     else

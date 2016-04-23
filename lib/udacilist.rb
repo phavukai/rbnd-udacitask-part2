@@ -2,9 +2,6 @@ class UdaciList
   
   attr_reader :title, :items
 
- 
-
-
   def initialize(options = {})
     @title = options[:title] ? options[:title] : 'Untitled List'
     @items = []
@@ -32,9 +29,6 @@ class UdaciList
   def all
     print
   end
-
- 
-
 
   def print(class_filter = nil)
     print_header
@@ -67,7 +61,7 @@ class UdaciList
     print(item_type)
   end
 
-def export_file
+  def export_file
     a = Artii::Base.new :font => 'slant'
     puts 'Please enter a file name:'
     filename = gets.chomp
@@ -78,13 +72,11 @@ def export_file
     end
   end
 
- 
-
   
   def delete_all
     @items.clear
   end
     
-  end
+end
 
 
